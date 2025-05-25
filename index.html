@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#F1F6F9">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="优雅高贵的时光影集，12张美好瞬间，支持多种现代化翻页效果">
+    <title>xuxu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* 内联样式确保居中 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+        }
+        .main-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .book-container {
+            transform: translateX(0) !important;
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- 优雅背景元素 -->
+    <div class="tech-background">
+        <div class="tech-grid"></div>
+        <div class="tech-particles">
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+            <div class="tech-particle"></div>
+        </div>
+        <div class="tech-glows">
+            <div class="tech-glow"></div>
+            <div class="tech-glow"></div>
+        </div>
+    </div>
+    
+    <!-- 几何装饰元素 -->
+    <div class="geometric-decorations">
+        <div class="geometric-element"></div>
+        <div class="geometric-element"></div>
+        <div class="geometric-element"></div>
+    </div>
+    
+    <!-- 悬停元素容器 -->
+    <div id="hover-flowers-container"></div>
+    
+    <div class="main-wrapper">
+        <div class="container">
+            <h1 class="page-title">xuxu</h1>
+            
+            <!-- 翻页方式选择器 -->
+            <div class="flip-style-selector">
+                <div class="flip-option active" data-style="rotate">
+                    <div class="flip-icon rotate-icon"></div>
+                    <span class="flip-label">旋转</span>
+                </div>
+                <div class="flip-option" data-style="fade">
+                    <div class="flip-icon fade-icon"></div>
+                    <span class="flip-label">渐变</span>
+                </div>
+            </div>
+            
+            <div class="book-container">
+                <div class="loading-animation">
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+                </div>
+                
+                <div class="book">
+                    <div class="page-container">
+                        <!-- 页面将由JavaScript动态生成 -->
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <div class="nav-btn prev-btn" aria-label="上一页"></div>
+                    <div class="page-number">
+                        <span class="current">1</span>/<span class="total">1</span>
+                    </div>
+                    <div class="nav-btn next-btn" aria-label="下一页"></div>
+                </div>
+            </div>
+            
+            <!-- 提示信息 -->
+            <div class="device-tips">
+                <div class="mobile-tip">轻触左右区域或滑动翻页查看更多图片</div>
+                <div class="desktop-tip">使用方向键或点击按钮切换图片</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-decoration"></div>
+    
+    <div class="lightbox" role="dialog" aria-label="图片查看器">
+        <div class="lightbox-content">
+            <img src="" alt="放大图片" class="lightbox-img">
+            <button class="close-btn" aria-label="关闭">×</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
